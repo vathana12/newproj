@@ -8,6 +8,8 @@ function App() {
   useEffect(() => {
     alanBtn({
       key: alanKey,
+      rootEl: document.getElementById("alan-btn"),
+      left: '575px',
       onCommand: ({ command}) => {
         if(command === 'testCommand') {
           alert('This code works')
@@ -23,6 +25,7 @@ function App() {
       </h1>
       <img src={logo} className='App-logo' alt='logo'/>
       </header>
+      <div className="alan-btn"></div>
     </div>
   );
 }
