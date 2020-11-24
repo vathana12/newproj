@@ -11,7 +11,6 @@ function App() {
     alanBtn({
       key: alanKey,
       rootEl: alanBtnContainer.current,
-      left: '575px',
       onCommand: ({ command}) => {
         if(command === 'testCommand') {
           alert('This code works')
@@ -26,8 +25,8 @@ function App() {
         Hey :)
       </h1>
       <img src={logo} className='App-logo' alt='logo'/>
+      
       </header>
-      <div ref={alanBtnContainer}></div>
     </div>
   );
 }
